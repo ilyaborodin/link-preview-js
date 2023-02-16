@@ -1,6 +1,8 @@
 import cheerio from "cheerio";
-import { fetch } from "cross-fetch";
-import AbortController from "abort-controller";
+// import { fetch } from "cross-fetch";
+import fetch from "node-fetch";
+// import AbortController from "abort-controller";
+import { AbortController } from "node-abort-controller";
 import urlObj from "url";
 import { CONSTANTS } from "./constants";
 
@@ -392,7 +394,7 @@ export async function getLinkPreview(
     controller.abort()
     console.log('aborted, end')
   }, timeout);
-
+  console.log('timeout, ', timeout)
   const fetchOptions = {
     headers: options?.headers ?? {},
     redirect: options?.followRedirects ?? `error`,
