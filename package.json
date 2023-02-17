@@ -33,8 +33,6 @@
     "abort-controller": "^3.0.0",
     "cheerio": "1.0.0-rc.11",
     "cross-fetch": "3.1.5",
-    "node-abort-controller": "^3.1.1",
-    "node-fetch": "^3.3.0",
     "url": "0.11.0"
   },
   "files": [
