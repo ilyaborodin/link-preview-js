@@ -12,11 +12,12 @@
   },
   "types": "build/index.d.ts",
   "scripts": {
+    "prepare": "tsc",
+    "build:tsc": "tsc",
     "test": "jest",
     "test:ci": "jest --testLocationInResults --ci --outputFile=test_results.json --json",
     "build": "tsc",
-    "bump": "./bump-version.sh",
-    "prepublishOnly": "tsc"
+    "bump": "./bump-version.sh"
   },
   "keywords": [
     "javascript",
